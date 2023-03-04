@@ -19,13 +19,40 @@
     background-color: rgb(113, 155, 245);
     width: 120px;
 }
-/* .heading::before{
-    background-color: lightblue;
-    width: 100%;
-    content: '';
-    height: 100%;
-    display: block;
-    position: absolute;
-    */
-    
+.card{
+
+    position: relative;
+    margin: 20px;
+    background-color: gray;
 }
+
+.card-img{
+    max-width: 100%;
+    display: block;
+    transition: ease-out 250ms;
+    opacity: 0.8;
+}
+.card-img:hover{
+    opacity: 0.4;
+}
+
+.card-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity ease-out 250ms;
+
+}
+.card:hover .card-text{
+    opacity: 1;
+}
+.card-title{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0;
+}
+
+.
