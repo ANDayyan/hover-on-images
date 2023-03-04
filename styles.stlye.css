@@ -36,6 +36,33 @@
     opacity: 0.4;
 }
 
+.card-img::after{
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+     
+   
+}
+
+.card::before{
+    background: rgb(8, 8, 8);
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+    transform: scale(0, 1);
+    transition: transform ease-out 0.5s;
+   
+}
+.card:hover::before{
+    transform: scale(1, 1);
+}
+
 .card-text{
     position: absolute;
     top: 50%;
@@ -54,5 +81,3 @@
     color: white;
     margin-bottom: 0;
 }
-
-.
